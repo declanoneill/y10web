@@ -1,0 +1,109 @@
+
+<html>
+ 
+
+<h1>Monkey badge recipients</h1>
+	
+	
+<h3>1989 - ODOG</h3>
+
+<img src="/Users/declan.oneill/Downloads/IMG_0415.jpg" width="300"/>
+
+<table border="1">
+  <th>Inventer</th><th>Technology</th>
+  <tr>
+     <td>Odog</td><td>Monkey Badge</td>
+  </tr>
+  <tr>
+     <td>TriedRuby</td><td>TTV</td>
+  </tr>
+  <tr>
+     <td>DasparD</td><td>VBucks Buyer</td>
+  </tr>
+</table>
+
+<h3>1996 - Scott </h3>
+
+<img src="/Users/declan.oneill/Downloads/IMG_0660.jpg" width="300px"/>
+<style>
+
+#inventors {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: separate;
+  width: 100%;
+  margin: auto;
+}
+
+#inventors td, #inventors th {
+  border: 1px solid #ddd;
+  padding: 35px;
+}
+
+#inventors tr:nth-child(even){background-color: #f2f2f2;}
+
+#inventors tr:hover {background-color:darksalmon;}
+
+#inventors th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color:aqua;
+}
+
+</style>
+
+<table id="inventors" border="1">
+  <th>Inventor</th><th>Technology</th>
+  <tr>
+     <td>Tim Berners-Lee</td><td>WWW & HTML</td>
+  </tr>
+  <tr>
+     <td>Håkon Wium Lie</td><td>CSS</td>
+  </tr>
+  <tr>
+     <td>Brenden Eich</td><td>Javascript</td>
+  </tr>
+</table>
+
+<h3>1995 - DasparD  </h3>
+
+<div id="printmytable"></div>
+<img src="/Users/declan.oneill/Downloads/IMG_0934.PNG" width="300px">
+
+<script>
+
+function buildmyTable() {
+
+  var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
+
+  // build a string variable with all the table code and data
+  var mytable = "<table border='1'>";
+  mytable = mytable + "<th>Inventor</th><th>Invention</th>";
+
+  // loop through data table to add data
+  for (i = 0; i < inventors.length; i = i + 1) {
+    mytable = mytable + "<tr>";
+    mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
+    mytable = mytable + "</tr>";
+  }
+
+  mytable = mytable + "</table>";
+
+  // get the div and substitute mytable data for it
+  var placetoprint = document.getElementById("printmytable");
+  placetoprint.innerHTML = mytable;
+
+}
+
+buildmyTable()
+
+</script>
+
+<style>
+        body {
+            background-color:firebrick
+        }
+     <style>
+
+</html>
